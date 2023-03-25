@@ -105,6 +105,16 @@ export default function LivingCommunityAccount() {
           <div className="flex items-center mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             <img
               className="w-12 h-12 m-3 rounded-full sm:hidden"
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+              alt=""
+            />
+            <h1 className="ml-10 mr-10 leading-7 text-gray-900 text-small sm:truncate sm:leading-9">
+              Tim Mayer
+            </h1>
+          </div>
+          <div className="flex items-center mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+            <img
+              className="w-12 h-12 m-3 rounded-full sm:hidden"
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.6&w=256&h=256&q=80"
               alt=""
             />
