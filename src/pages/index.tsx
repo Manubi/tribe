@@ -4,6 +4,7 @@ import { CreditCardIcon, PlusCircleIcon } from "@heroicons/react/24/outline";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import MyAccount from "./MyAccount";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -51,6 +52,18 @@ export default function Home() {
         >
           Send money
         </button> */}
+        {/* <h2 className="mt-8 ml-6 text-lg font-medium leading-6 text-gray-900">
+          Wallet Overview
+        </h2> */}
+
+        <MyAccount />
+        <h2 className="mt-8 ml-6 text-lg font-medium leading-6 text-gray-900">
+          Shared Wallets
+        </h2>
+        <div className="mb-52">
+          <AccountCard card={card_WG} />
+          <AccountCard card={card_Family} />
+        </div>
         <Tabbar />
       </div>
     </>
