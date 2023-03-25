@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Dialog, Menu, Transition } from "@headlessui/react";
 import {
   BanknotesIcon,

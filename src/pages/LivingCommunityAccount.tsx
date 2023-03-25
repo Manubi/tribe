@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { AccountCard } from "@/components/AccountCard";
 import { Card } from "@/components/Cards";
 import styles from "@/styles/Home.module.css";
@@ -10,6 +11,7 @@ import {
   CreditCardIcon,
   ArrowDownIcon,
   ArrowUpIcon,
+  ShoppingBagIcon,
 } from "@heroicons/react/24/outline";
 
 const transactions = [
@@ -78,6 +80,38 @@ export default function LivingCommunityAccount() {
             Withdraw{" "}
             <ArrowUpIcon className="flex-shrink-0 w-5 h-5 text-white-400 ml-5 " />
           </button>
+        </div>
+
+        <div className="flex items-center   bg-blue-600     px-3 py-2 text-sm  shadow-sm ring-1 ring-inset ring-blue-700 hover:bg-blue-700 mt-2 rounded text-center m-20">
+          Claim new offers
+          <ShoppingBagIcon className="flex-shrink-0 w-5 h-5 text-gray-400 ml-5 " />
+        </div>
+
+        <h2 className="max-w-6xl px-4 mx-auto mt-8 text-lg font-medium leading-6 text-gray-900 sm:px-6 lg:px-8">
+          Members
+        </h2>
+
+        <div className="m-2">
+          <div className="flex items-center   bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 mt-2">
+            <img
+              className="w-12 h-12 rounded-full sm:hidden m-3"
+              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <h1 className="text-small  leading-7 text-gray-900 sm:truncate sm:leading-9 mr-10 ml-10">
+              John Doe
+            </h1>
+          </div>
+          <div className="flex items-center   bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 mt-2">
+            <img
+              className="w-12 h-12 rounded-full sm:hidden m-3"
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.6&w=256&h=256&q=80"
+              alt=""
+            />
+            <h1 className="text-small  leading-7 text-gray-900 sm:truncate sm:leading-9 mr-10 ml-10">
+              Lisa Stone
+            </h1>
+          </div>
         </div>
 
         <h2 className="max-w-6xl px-4 mx-auto mt-8 text-lg font-medium leading-6 text-gray-900 sm:px-6 lg:px-8">
