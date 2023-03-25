@@ -49,7 +49,7 @@ export default function Home() {
             <PlusCircleIcon className="w-8 h-8 -mt-2 text-gray-500" />
           </div>
         </div>
-        <div className="space-y-6 mb-52">
+        <div className="mb-24 space-y-6">
           <AccountCard card={card_WG} />
           <AccountCard card={card_Family} />
         </div>
