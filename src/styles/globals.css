@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .tabbar {
-  @apply fixed bottom-0 flex flex-row items-center justify-around visible w-full h-16 px-8 text-2xl bg-white md:hidden md:invisible rounded-t-3xl;
+  @apply fixed bottom-0 flex flex-row items-center justify-around visible w-full h-16 px-8 text-2xl bg-white border md:hidden md:invisible rounded-t-3xl;
 }
 
 .tabItem {
