@@ -1,8 +1,9 @@
 import { AccountCard } from "@/components/AccountCard";
 import Tabbar from "@/components/Tabbar";
-import { CreditCardIcon } from "@heroicons/react/24/outline";
+import { CreditCardIcon, PlusCircleIcon } from "@heroicons/react/24/outline";
 import { Inter } from "next/font/google";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ const card_Family = {
 };
 
 export default function Home() {
+  const router = useRouter();
   return (
     <>
       <Head>
@@ -33,9 +35,14 @@ export default function Home() {
       </Head>
       <div>
         <h2 className="mt-8 ml-6 text-lg font-medium leading-6 text-gray-900">
-          Wallet Overview
+          Shared Accounts Overview
         </h2>
-
+        <div
+          className="flex justify-end"
+          onClick={() => router.push("/create")}
+        >
+          <PlusCircleIcon className="w-8 h-8 mr-6 text-gray-500" />
+        </div>
         <AccountCard card={card_WG} />
         <AccountCard card={card_Family} />
         {/* <button
