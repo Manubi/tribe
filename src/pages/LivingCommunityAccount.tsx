@@ -12,6 +12,7 @@ import {
   ArrowDownIcon,
   ArrowUpIcon,
   ShoppingBagIcon,
+  PlusCircleIcon,
 } from "@heroicons/react/24/outline";
 
 const transactions = [
@@ -110,6 +111,13 @@ export default function LivingCommunityAccount() {
             />
             <h1 className="text-small  leading-7 text-gray-900 sm:truncate sm:leading-9 mr-10 ml-10">
               Lisa Stone
+            </h1>
+          </div>
+          <div className="flex items-center   bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 mt-2">
+            <h1 className=" m-auto leading-7 text-gray-900  ">
+              <div>
+                <PlusCircleIcon className="flex-shrink-0 w-10 h-10 text-gray-400 ml-5 " />
+              </div>
             </h1>
           </div>
         </div>
