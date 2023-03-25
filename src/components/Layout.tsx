@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="h-full">
       <div className="">{children}</div>
-      <Tabbar currentRoute={currentRoute} setCurrentRoute={setCurrentRoute} />
+      <Tabbar />
     </div>
   );
 }

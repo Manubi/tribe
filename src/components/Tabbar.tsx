@@ -1,30 +1,27 @@
 // @src/components/Tabbar/index.jsx
 
 import classNames from "classnames";
+import { useRouter } from "next/router";
 import { useCallback } from "react";
-import { AiFillCompass, AiFillHome } from "react-icons/ai";
-import { BsFillBagFill, BsFillPersonFill } from "react-icons/bs";
-import { CgInbox } from "react-icons/cg";
+import { AiFillBook, AiFillCompass, AiFillHome } from "react-icons/ai";
 
-const navigationData = ["Home", "Discover", "Store", "Inbox", "Profile"];
+const navigationData = ["/", "invite", "history"];
 
-const Tabbar = ({ currentRoute, setCurrentRoute }: any) => {
-  const getTabIcon = useCallback((item: any) => {
-    switch (item) {
-      case "Home":
-        return <AiFillHome />;
-      case "Discover":
+const Tabbar = () => {
+  const router = useRouter();
+  const pathName = router.pathname;
+  const getTabIcon = useCallback((pathName: string) => {
+    switch (pathName) {
+      case "invite":
         return <AiFillCompass />;
-      case "Store":
-        return <BsFillBagFill />;
-      case "Inbox":
-        return <CgInbox />;
-      case "Profile":
-        return <BsFillPersonFill />;
+      case "history":
+        return <AiFillBook />;
+      case "/":
+        return <AiFillHome />;
     }
   }, []);
 
-  console.log("navigationData", navigationData);
+  console.log("pathName", pathName);
   return (
     <nav className="tabbar">
       {navigationData &&
@@ -33,9 +30,9 @@ const Tabbar = ({ currentRoute, setCurrentRoute }: any) => {
             key={index}
             className={classNames([
               "tabItem",
-              currentRoute === item && "tabItemActive",
+              pathName === item && "tabItemActive",
             ])}
-            onClick={() => setCurrentRoute(item)}
+            onClick={() => router.push(item)}
           >
             <span className="icon">{getTabIcon(item)}</span>
           </span>
