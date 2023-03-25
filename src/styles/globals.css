@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .tabbar {
-  @apply fixed bottom-0 flex flex-row items-center justify-around visible w-full h-16 px-8 text-2xl bg-gray-100 md:hidden md:invisible rounded-t-3xl;
+  @apply fixed bottom-0 flex flex-row items-center justify-around visible w-full h-16 px-8 text-2xl bg-white md:hidden md:invisible rounded-t-3xl;
 }
 
 .tabItem {
@@ -11,7 +11,7 @@
 }
 
 .tabItemActive {
-  @apply text-gray-700 border-t-2 border-gray-700 bg-gradient-to-t from-black to-gray-900;
+  @apply text-gray-700 border-t-2 border-gray-900 bg-gradient-to-t from-white to-gray-200;
 }
 
 .icon {
@@ -108,7 +108,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: white;
+  background: #f3f4f6;
   /* background: linear-gradient(
       to bottom,
       transparent,

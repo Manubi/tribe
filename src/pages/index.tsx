@@ -1,10 +1,8 @@
 import { AccountCard } from "@/components/AccountCard";
-import { Card } from "@/components/Cards";
-import styles from "@/styles/Home.module.css";
+import Tabbar from "@/components/Tabbar";
+import { CreditCardIcon } from "@heroicons/react/24/outline";
 import { Inter } from "next/font/google";
 import Head from "next/head";
-import Image from "next/image";
-import { CreditCardIcon } from "@heroicons/react/24/outline";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +32,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <h2 className="text-lg font-medium leading-6 text-gray-900 mt-8 ml-6">
+        <h2 className="mt-8 ml-6 text-lg font-medium leading-6 text-gray-900">
           Wallet Overview
         </h2>
 
@@ -46,6 +44,7 @@ export default function Home() {
         >
           Send money
         </button> */}
+        <Tabbar />
       </div>
     </>
   );

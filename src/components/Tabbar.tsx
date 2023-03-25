@@ -1,20 +1,18 @@
-// @src/components/Tabbar/index.jsx
-
 import classNames from "classnames";
 import { useRouter } from "next/router";
 import { useCallback } from "react";
 import { AiFillBook, AiFillCompass, AiFillHome } from "react-icons/ai";
 
-const navigationData = ["/", "invite", "history"];
+const navigationData = ["/", "/invite", "/history"];
 
 const Tabbar = () => {
   const router = useRouter();
   const pathName = router.pathname;
   const getTabIcon = useCallback((pathName: string) => {
     switch (pathName) {
-      case "invite":
+      case "/invite":
         return <AiFillCompass />;
-      case "history":
+      case "/history":
         return <AiFillBook />;
       case "/":
         return <AiFillHome />;
