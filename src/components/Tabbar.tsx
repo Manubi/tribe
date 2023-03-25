@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import { useRouter } from "next/router";
 import { useCallback } from "react";
-import { AiFillCompass, AiFillHome, AiFillWallet } from "react-icons/ai";
+import { AiFillHome, AiFillPlusCircle, AiFillWallet } from "react-icons/ai";
 
 const navigationData = ["/", "/create", "/wallet"];
 
@@ -11,7 +11,7 @@ const Tabbar = () => {
   const getTabIcon = useCallback((pathName: string) => {
     switch (pathName) {
       case "/create":
-        return <AiFillCompass />;
+        return <AiFillPlusCircle />;
       case "/wallet":
         return <AiFillWallet />;
       case "/":
