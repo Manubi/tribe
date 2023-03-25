@@ -1,8 +1,8 @@
 import classNames from "classnames";
 import { useRouter } from "next/router";
 import { useCallback } from "react";
-import { AiFillHome, AiFillPlusCircle, AiFillWallet } from "react-icons/ai";
-
+import { AiFillHome, AiFillPlusCircle } from "react-icons/ai";
+import { HiUserGroup } from "react-icons/hi";
 const navigationData = ["/", "/create", "/wallet"];
 
 const Tabbar = () => {
@@ -13,7 +13,7 @@ const Tabbar = () => {
       case "/create":
         return <AiFillPlusCircle />;
       case "/wallet":
-        return <AiFillWallet />;
+        return <HiUserGroup />;
       case "/":
         return <AiFillHome />;
     }
