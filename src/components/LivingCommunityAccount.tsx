@@ -15,9 +15,9 @@ import Image from "next/image";
 const transactions = [
   {
     id: 1,
-    name: "Payment rent Bennogasse 04/2023",
+    name: "Rent Bennogasse 04/2023",
     href: "#",
-    amount: "€ 2.000,00",
+    amount: "€ -2.000,00",
     currency: "EUR",
     status: "success",
     date: "April 01, 2023",
@@ -25,9 +25,9 @@ const transactions = [
   },
   {
     id: 2,
-    name: "Payment electricity & gas",
+    name: "Billa Groceries",
     href: "#",
-    amount: "€ 44,23",
+    amount: "€ -54,23",
     currency: "USD",
     status: "success",
     date: "March 30, 2023",
@@ -35,15 +35,24 @@ const transactions = [
   },
   {
     id: 3,
-    name: "Payment Insurance",
+    name: "Electricity & gas",
     href: "#",
-    amount: "€ 10,99",
+    amount: "€ -40,99",
     currency: "EUR",
     status: "success",
     date: "March 29, 2023",
     datetime: "2023-07-11",
   },
-  // More transactions...
+  {
+    id: 4,
+    name: "Deposit Tim Mayer",
+    href: "#",
+    amount: "€ +200,00",
+    currency: "EUR",
+    status: "success",
+    date: "March 29, 2023",
+    datetime: "2023-07-11",
+  },
 ];
 
 export default function LivingCommunityAccount() {
@@ -105,7 +114,7 @@ export default function LivingCommunityAccount() {
                 John Doe
               </h1>
             </div>
-            <div className="flex items-center justify-between pl-2 pr-3 mr-3 text-xs leading-6 text-gray-900 bg-yellow-300 sm:truncate sm:leading-9 rounded-xl">
+            <div className="flex items-center justify-between pl-2 pr-3 mr-3 text-xs leading-5 text-gray-900 bg-yellow-300 sm:truncate sm:leading-9 rounded-xl">
               <ClockIcon className="flex-shrink-0 w-3 h-3.5 mr-3.5 text-gray-900 ml-15 " />{" "}
               Invited{" "}
             </div>
@@ -121,9 +130,9 @@ export default function LivingCommunityAccount() {
                 Tim Mayer
               </h1>
             </div>
-            <div className="flex items-center justify-between pl-2 pr-3 mr-3 text-xs leading-6 text-gray-900 bg-green-200 sm:truncate sm:leading-9 rounded-xl">
+            <div className="flex items-center justify-between pl-2 pr-3 mr-3 text-xs leading-5 text-gray-900 bg-green-200 sm:truncate sm:leading-9 rounded-xl">
               <CheckIcon className="flex-shrink-0 w-3.5 h-3.5 mr-3 text-gray-900 ml-15 " />{" "}
-              Virtual Card{" "}
+              Virtual card{" "}
             </div>
           </div>
           <div className="flex items-center justify-between mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
@@ -137,9 +146,15 @@ export default function LivingCommunityAccount() {
                 Me
               </h1>
             </div>
-            <div className="flex items-center justify-between pl-2 pr-3 mr-3 text-xs leading-6 text-gray-900 bg-green-200 sm:truncate sm:leading-9 rounded-xl">
-              <CheckIcon className="flex-shrink-0 w-3.5 h-3.5 mr-3 text-gray-900 ml-15 " />{" "}
-              Virtual Card{" "}
+            <div>
+              <div className="flex items-center justify-between pl-2 pr-3 mr-3 text-xs leading-5 text-gray-900 bg-green-200 sm:truncate sm:leading-9 rounded-xl">
+                <CheckIcon className="flex-shrink-0 w-3.5 h-3.5 mr-3 text-gray-900 ml-15 " />{" "}
+                Virtual card{" "}
+              </div>
+              <div className="flex items-center justify-between pl-2 pr-3 mr-3 mt-1.5 text-xs leading-5 text-gray-900 bg-gray-200 sm:truncate sm:leading-9 rounded-xl">
+                <CheckIcon className="flex-shrink-0 w-3.5 h-3.5 mr-3 text-gray-900 ml-15 " />{" "}
+                Account owner{" "}
+              </div>
             </div>
           </div>
           <div className="flex items-center justify-between mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
