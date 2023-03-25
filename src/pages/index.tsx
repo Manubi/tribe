@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const card_WG = {
   name: "Living Community",
-  href: "/LivingCommunityAccount",
+  href: "/wallet",
   icon: CreditCardIcon,
   amount: "€ 2.400,50",
   description: "Bennogasse 19/19",
@@ -19,10 +19,10 @@ const card_WG = {
 
 const card_Family = {
   name: "Family",
-  href: "/Family",
+  href: "/wallet",
   icon: CreditCardIcon,
-  amount: "€ 5.600,50",
-  description: "My shared family account",
+  amount: "€ 1.600,50",
+  description: "Schwarzenegger Family",
 };
 
 export default function Home() {

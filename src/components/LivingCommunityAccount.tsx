@@ -7,7 +7,7 @@ import {
   CheckIcon,
   ChevronRightIcon,
   ClockIcon,
-  ShoppingBagIcon,
+  ShoppingBagIcon
 } from "@heroicons/react/24/outline";
 import Head from "next/head";
 import Image from "next/image";
@@ -64,7 +64,7 @@ export default function LivingCommunityAccount() {
             Bennogasse 19/19
           </p>
           <h2 className="mt-12 text-2xl font-semibold leading-6 text-center text-gray-900">
-            € 2,400.50
+            € 1.400,50
           </h2>
         </div>
         <div className="flex justify-between m-10 align-middle">
