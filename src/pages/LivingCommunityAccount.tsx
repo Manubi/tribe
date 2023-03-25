@@ -5,6 +5,8 @@ import {
   ArrowUpIcon,
   BanknotesIcon,
   ChevronRightIcon,
+  ClockIcon,
+  CheckIcon,
   ShoppingBagIcon,
 } from "@heroicons/react/24/outline";
 import Head from "next/head";
@@ -92,37 +94,49 @@ export default function LivingCommunityAccount() {
         </h2>
 
         <div className="m-2">
-          <div className="flex items-center mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+          <div className="flex items-center justify-between mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             <img
               className="w-12 h-12 m-3 rounded-full sm:hidden"
               src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
               alt=""
             />
+            <div className="pr-3 pl-2 leading-7 text-gray-900 text-small sm:truncate sm:leading-9 flex justify-between items-center bg-yellow-300  rounded-xl">
+              <ClockIcon className="flex-shrink-0 w-5 h-5 text-gray-900 ml-15 mr-3 " />{" "}
+              Invited{" "}
+            </div>
             <h1 className="ml-10 mr-10 leading-7 text-gray-900 text-small sm:truncate sm:leading-9">
               John Doe
             </h1>
           </div>
-          <div className="flex items-center mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+          <div className="flex items-center justify-between  mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             <img
               className="w-12 h-12 m-3 rounded-full sm:hidden"
               src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
               alt=""
             />
+            <div className="pr-3 pl-2 leading-7 text-gray-900 text-small sm:truncate sm:leading-9 flex justify-between items-center bg-green-300  rounded-xl">
+              <CheckIcon className="flex-shrink-0 w-5 h-5 text-gray-900 ml-15 mr-3 " />{" "}
+              Active{" "}
+            </div>
             <h1 className="ml-10 mr-10 leading-7 text-gray-900 text-small sm:truncate sm:leading-9">
               Tim Mayer
             </h1>
           </div>
-          <div className="flex items-center mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+          <div className="flex items-center justify-between  mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             <img
               className="w-12 h-12 m-3 rounded-full sm:hidden"
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.6&w=256&h=256&q=80"
               alt=""
             />
+            <div className="pr-3 pl-2 leading-7 text-gray-900 text-small sm:truncate sm:leading-9 flex justify-between items-center bg-green-300  rounded-xl">
+              <CheckIcon className="flex-shrink-0 w-5 h-5 text-gray-900 ml-15 mr-3 " />{" "}
+              Active{" "}
+            </div>
             <h1 className="ml-10 mr-10 leading-7 text-gray-900 text-small sm:truncate sm:leading-9">
               Me
             </h1>
           </div>
-          <div className="flex items-center mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+          <div className="flex items-center justify-between  mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             <h1 className="m-auto leading-7 text-gray-900 ">
               <div className="flex content-center justify-center h-12 align-middle">
                 <p className="my-auto font-medium"> Add member </p>
