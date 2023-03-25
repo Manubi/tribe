@@ -12,7 +12,7 @@ const transactions = [
     id: 1,
     name: "Payment to Molly Sanders",
     href: "#",
-    amount: "€ 2,000.00",
+    amount: "€ 2.000,00",
     currency: "EUR",
     status: "success",
     date: "July 11, 2023",
@@ -22,7 +22,7 @@ const transactions = [
     id: 2,
     name: "Payment to Supermarket",
     href: "#",
-    amount: "€ 44.23",
+    amount: "€ 44,23",
     currency: "USD",
     status: "success",
     date: "July 12, 2023",
@@ -32,7 +32,7 @@ const transactions = [
     id: 3,
     name: "Payment to Phone carrier",
     href: "#",
-    amount: "€ 10.99",
+    amount: "€ 10,99",
     currency: "EUR",
     status: "success",
     date: "July 13, 2023",
@@ -55,7 +55,7 @@ export default function MyAccount() {
           My Account
         </h2> */}
         <h2 className="mt-8 ml-6 text-2xl font-semibold leading-6 text-center text-gray-900">
-          € 2,400.50
+          € 2.400,50
         </h2>
 
         <div className="flex justify-between m-10 align-middle">
