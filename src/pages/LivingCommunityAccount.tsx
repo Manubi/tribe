@@ -5,8 +5,10 @@ import {
   ArrowUpIcon,
   BanknotesIcon,
   ChevronRightIcon,
+  ShoppingBagIcon,
 } from "@heroicons/react/24/outline";
 import Head from "next/head";
+import Image from "next/image";
 
 const transactions = [
   {
@@ -159,23 +161,45 @@ export default function LivingCommunityAccount() {
                   </span>
                 </a>
                 {transaction.id === 2 ? (
-                  <div className="block px-4 py-4 bg-white hover:bg-gray-50">
-                    <span className="flex items-center space-x-4">
-                      <span className="flex flex-1 space-x-2 truncate">
-                        <span className="font-medium text-gray-900">BILLA</span>
+                  <div className="block px-4 py-4  hover:bg-gray-50 bg-gradient-to-r from-yellow-400  to-yellow-500">
+                    <div>
+                      <span className="flex items-center space-x-4">
+                        <span className="flex flex-1 space-x-2 truncate">
+                          <span className="font-medium text-gray-900">
+                            {/* <Image
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Billa-Logo.svg/1200px-Billa-Logo.svg.png"
+                              alt="billa-logo"
+                              width="100"
+                              height="50"
+                            /> */}
+                            <Image
+                              src="https://assets-eu-01.kc-usercontent.com/cc0b17b0-a734-010a-8710-f644b7ee1f24/0d0819af-418f-4c12-b885-b8158ec49e2f/Web_Warengruppen_BP_600x300px_KW12.png?w=600&fm=webp&lossless=0&q=90&dpr=2"
+                              alt="billa-logo"
+                              width="150"
+                              height="75"
+                            />
+                          </span>
+                        </span>
+                        {/* <ChevronRightIcon
+                          className="flex-shrink-0 w-5 h-5 text-gray-400"
+                          aria-hidden="true"
+                        /> */}
+                        <button
+                          type="button"
+                          className="inline-flex items-center px-3 py-2  mb-2 text-sm font-semibold text-white bg-white-500  ring-1 rounded ring-white"
+                        >
+                          Claim
+                          <ShoppingBagIcon className="flex-shrink-0 w-5 h-5 text-white-400 ml-5 " />
+                        </button>
                       </span>
-                      <ChevronRightIcon
-                        className="flex-shrink-0 w-5 h-5 text-gray-400"
-                        aria-hidden="true"
-                      />
-                    </span>
-                    {/* <button
+                      {/* <button
                       type="button"
                       className="inline-flex items-center px-3 py-2 mb-2 text-sm font-semibold text-white bg-green-500 rounded-md shadow-sm ring-1 ring-inset ring-green-500 hover:bg-green-600"
                     >
                       Claim your award{" "}
                       <ShoppingBagIcon className="flex-shrink-0 w-5 h-5 ml-5 text-white-400 " />
                     </button> */}
+                    </div>
                   </div>
                 ) : null}
               </li>
