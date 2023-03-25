@@ -119,10 +119,10 @@ export default function LivingCommunityAccount() {
         </h2>
 
         {/* Activity list (smallest breakpoint only) */}
-        <div className="shadow sm:hidden">
+        <div className="mt-2 shadow sm:hidden">
           <ul
             role="list"
-            className="mt-2 overflow-hidden divide-y divide-gray-200 shadow sm:hidden"
+            className=" overflow-hidden divide-y divide-gray-200 shadow sm:hidden"
           >
             {transactions.map((transaction) => (
               <li key={transaction.id}>
@@ -156,10 +156,10 @@ export default function LivingCommunityAccount() {
                   </span>
                 </a>
                 {transaction.id === 2 ? (
-                  <div className="flex justify-center items-center mb-2">
+                  <div className="flex justify-center items-center  bg-white hover:bg-gray-50">
                     <button
                       type="button"
-                      className="inline-flex items-center px-3 py-2 text-sm font-semibold text-white bg-green-500 rounded-md shadow-sm ring-1 ring-inset ring-green-500 hover:bg-green-600"
+                      className="inline-flex items-center px-3 py-2  mb-2 text-sm font-semibold text-white bg-green-500 rounded-md shadow-sm ring-1 ring-inset ring-green-500 hover:bg-green-600"
                     >
                       Claim your award{" "}
                       <ShoppingBagIcon className="flex-shrink-0 w-5 h-5 text-white-400 ml-5 " />
