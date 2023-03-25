@@ -5,7 +5,7 @@ import { CreditCardIcon, PlusCircleIcon } from "@heroicons/react/24/outline";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import MyAccount from "./MyAccount";
+import MyAccount from "../components/MyAccount";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,18 +38,18 @@ export default function Home() {
       <div className="mt-8">
         <Profile />
         <MyAccount />
-        <div className="flex content-center justify-between">
-          <h2 className="mt-8 ml-6 leading-6 text-gray-900 font-md">
-            Shared Wallets
+        <div className="flex content-center justify-between mx-6 mt-12 mb-2">
+          <h2 className="text-lg font-medium text-gray-900">
+            Shared group accounts
           </h2>
           <div
             className="flex justify-end"
             onClick={() => router.push("/create")}
           >
-            <PlusCircleIcon className="w-8 h-8 mr-6 text-gray-500" />
+            <PlusCircleIcon className="w-8 h-8 -mt-2 text-gray-500" />
           </div>
         </div>
-        <div className="mb-52">
+        <div className="space-y-6 mb-52">
           <AccountCard card={card_WG} />
           <AccountCard card={card_Family} />
         </div>

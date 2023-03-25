@@ -1,4 +1,4 @@
-import { EnvelopeIcon } from "@heroicons/react/24/outline";
+import { BellAlertIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 
 export function Profile() {
   return (
@@ -29,14 +29,14 @@ export function Profile() {
               />
               2 new messages
             </dd>
-            {/* <dt className="sr-only">Account status</dt>
+            <dt className="sr-only">Account status</dt>
             <dd className="flex items-center mt-3 text-sm font-medium text-gray-500 capitalize sm:mr-6 sm:mt-0">
-              <AiFillEuroCircle
-                className="mr-1.5 h-5 w-5 flex-shrink-0 text-green-400"
+              <BellAlertIcon
+                className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
                 aria-hidden="true"
               />
-              <span>12.452,00 €</span>
-            </dd> */}
+              <span>1 pending invitation</span>
+            </dd>
           </dl>
         </div>
       </div>

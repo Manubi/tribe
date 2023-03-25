@@ -1,6 +1,6 @@
 export function AccountCard({ card }: any) {
   return (
-    <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8 m-10">
+    <div className="max-w-6xl px-4 mx-auto sm:px-6 lg:px-8">
       <div
         key={card.name}
         className="overflow-hidden bg-white rounded-lg shadow"
