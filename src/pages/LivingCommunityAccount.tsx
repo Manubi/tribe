@@ -55,10 +55,12 @@ export default function LivingCommunityAccount() {
       </Head>
       <div className="mx-4 my-8">
         <div className="flex flex-col justify-center">
-          <h2 className="mt-8 text-lg leading-6 text-center text-gray-900 font-large">
+          <h2 className="mt-8 text-2xl font-medium leading-6 text-center text-gray-900">
             Living Community
           </h2>
-          <p className="text-sm text-center text-gray-400">Bennogasse 19/19</p>
+          <p className="mt-4 text-sm text-center text-gray-400">
+            Bennogasse 19/19
+          </p>
           <h2 className="mt-12 text-2xl font-semibold leading-6 text-center text-gray-900">
             € 2,400.50
           </h2>
@@ -161,7 +163,7 @@ export default function LivingCommunityAccount() {
                   </span>
                 </a>
                 {transaction.id === 2 ? (
-                  <div className="block px-4 py-4  hover:bg-gray-50 bg-gradient-to-r from-yellow-400  to-yellow-500">
+                  <div className="block px-4 py-4 hover:bg-gray-50 bg-gradient-to-r from-yellow-400 to-yellow-500">
                     <div>
                       <span className="flex items-center space-x-4">
                         <span className="flex flex-1 space-x-2 truncate">
@@ -186,10 +188,10 @@ export default function LivingCommunityAccount() {
                         /> */}
                         <button
                           type="button"
-                          className="inline-flex items-center px-3 py-2  mb-2 text-sm font-semibold text-white bg-white-500  ring-1 rounded ring-white"
+                          className="inline-flex items-center px-3 py-2 mb-2 text-sm font-semibold text-white rounded bg-white-500 ring-1 ring-white"
                         >
                           Claim
-                          <ShoppingBagIcon className="flex-shrink-0 w-5 h-5 text-white-400 ml-5 " />
+                          <ShoppingBagIcon className="flex-shrink-0 w-5 h-5 ml-5 text-white-400 " />
                         </button>
                       </span>
                       {/* <button
