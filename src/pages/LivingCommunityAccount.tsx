@@ -1,26 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
-import { AccountCard } from "@/components/AccountCard";
-import { Card } from "@/components/Cards";
-import styles from "@/styles/Home.module.css";
-import { Inter } from "next/font/google";
-import Head from "next/head";
-import Image from "next/image";
+import Tabbar from "@/components/Tabbar";
 import {
-  BanknotesIcon,
-  ChevronRightIcon,
-  CreditCardIcon,
   ArrowDownIcon,
   ArrowUpIcon,
-  ShoppingBagIcon,
-  PlusCircleIcon,
+  BanknotesIcon,
+  ChevronRightIcon,
 } from "@heroicons/react/24/outline";
+import Head from "next/head";
 
 const transactions = [
   {
     id: 1,
     name: "Payment to Molly Sanders",
     href: "#",
-    amount: "€ 20,000.00",
+    amount: "€ 2,000.00",
     currency: "EUR",
     status: "success",
     date: "July 11, 2023",
@@ -58,34 +51,36 @@ export default function LivingCommunityAccount() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <h2 className="text-lg font-large leading-6 text-gray-900 mt-8 ml-6">
-          Living Community
-        </h2>
-        <h2 className="text-lg font-medium leading-6 text-gray-900 mt-8 ml-6 text-center">
-          € 2,400.50
-        </h2>
-
-        <div className="flex justify-center align-middle gap-40 m-10">
+      <div className="mx-4 my-8">
+        <div className="flex flex-col justify-center">
+          <h2 className="mt-8 text-lg leading-6 text-center text-gray-900 font-large">
+            Living Community
+          </h2>
+          <p className="text-sm text-center text-gray-400">Bennogasse 19/19</p>
+          <h2 className="mt-12 text-2xl font-semibold leading-6 text-center text-gray-900">
+            € 2,400.50
+          </h2>
+        </div>
+        <div className="flex justify-between m-10 align-middle">
           <button
             type="button"
             className="inline-flex items-center px-3 py-2 text-sm font-semibold text-gray-900 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
           >
             Deposit{" "}
-            <ArrowDownIcon className="flex-shrink-0 w-5 h-5 text-gray-400 ml-5 " />
+            <ArrowDownIcon className="flex-shrink-0 w-5 h-5 ml-5 text-gray-400 " />
           </button>
           <button
             type="button"
             className="inline-flex items-center px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-cyan-600 hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
           >
             Withdraw{" "}
-            <ArrowUpIcon className="flex-shrink-0 w-5 h-5 text-white-400 ml-5 " />
+            <ArrowUpIcon className="flex-shrink-0 w-5 h-5 ml-5 text-white-400 " />
           </button>
         </div>
 
-        {/* <div className="flex items-center   bg-blue-600     px-3 py-2 text-sm  shadow-sm ring-1 ring-inset ring-blue-700 hover:bg-blue-700 mt-2 rounded text-center m-20">
+        {/* <div className="flex items-center px-3 py-2 m-20 mt-2 text-sm text-center bg-blue-600 rounded shadow-sm ring-1 ring-inset ring-blue-700 hover:bg-blue-700">
           Claim new offers
-          <ShoppingBagIcon className="flex-shrink-0 w-5 h-5 text-gray-400 ml-5 " />
+          <ShoppingBagIcon className="flex-shrink-0 w-5 h-5 ml-5 text-gray-400 " />
         </div> */}
 
         <h2 className="max-w-6xl px-4 mx-auto mt-8 text-lg font-medium leading-6 text-gray-900 sm:px-6 lg:px-8">
@@ -93,30 +88,30 @@ export default function LivingCommunityAccount() {
         </h2>
 
         <div className="m-2">
-          <div className="flex items-center   bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 mt-2">
+          <div className="flex items-center mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             <img
-              className="w-12 h-12 rounded-full sm:hidden m-3"
+              className="w-12 h-12 m-3 rounded-full sm:hidden"
               src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
               alt=""
             />
-            <h1 className="text-small  leading-7 text-gray-900 sm:truncate sm:leading-9 mr-10 ml-10">
+            <h1 className="ml-10 mr-10 leading-7 text-gray-900 text-small sm:truncate sm:leading-9">
               John Doe
             </h1>
           </div>
-          <div className="flex items-center   bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 mt-2">
+          <div className="flex items-center mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             <img
-              className="w-12 h-12 rounded-full sm:hidden m-3"
+              className="w-12 h-12 m-3 rounded-full sm:hidden"
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.6&w=256&h=256&q=80"
               alt=""
             />
-            <h1 className="text-small  leading-7 text-gray-900 sm:truncate sm:leading-9 mr-10 ml-10">
-              Lisa Stone
+            <h1 className="ml-10 mr-10 leading-7 text-gray-900 text-small sm:truncate sm:leading-9">
+              Me
             </h1>
           </div>
-          <div className="flex items-center   bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 mt-2">
-            <h1 className=" m-auto leading-7 text-gray-900  ">
-              <div>
-                <PlusCircleIcon className="flex-shrink-0 w-10 h-10 text-gray-400 ml-5 " />
+          <div className="flex items-center mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+            <h1 className="m-auto leading-7 text-gray-900 ">
+              <div className="flex content-center justify-center h-12 align-middle">
+                <p className="my-auto font-medium"> Add member </p>
               </div>
             </h1>
           </div>
@@ -130,7 +125,7 @@ export default function LivingCommunityAccount() {
         <div className="mt-2 shadow sm:hidden">
           <ul
             role="list"
-            className=" overflow-hidden divide-y divide-gray-200 shadow sm:hidden"
+            className="overflow-hidden divide-y divide-gray-200 shadow sm:hidden"
           >
             {transactions.map((transaction) => (
               <li key={transaction.id}>
@@ -176,10 +171,10 @@ export default function LivingCommunityAccount() {
                     </span>
                     {/* <button
                       type="button"
-                      className="inline-flex items-center px-3 py-2  mb-2 text-sm font-semibold text-white bg-green-500 rounded-md shadow-sm ring-1 ring-inset ring-green-500 hover:bg-green-600"
+                      className="inline-flex items-center px-3 py-2 mb-2 text-sm font-semibold text-white bg-green-500 rounded-md shadow-sm ring-1 ring-inset ring-green-500 hover:bg-green-600"
                     >
                       Claim your award{" "}
-                      <ShoppingBagIcon className="flex-shrink-0 w-5 h-5 text-white-400 ml-5 " />
+                      <ShoppingBagIcon className="flex-shrink-0 w-5 h-5 ml-5 text-white-400 " />
                     </button> */}
                   </div>
                 ) : null}
@@ -187,7 +182,9 @@ export default function LivingCommunityAccount() {
             ))}
           </ul>
         </div>
+        <div className="h-20" />
       </div>
+      <Tabbar />
     </>
   );
 }

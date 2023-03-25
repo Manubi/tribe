@@ -15,10 +15,11 @@ export default function Create() {
         <div className="mx-8 space-y-12">
           <div className="pb-12 border-b border-gray-900/10">
             <h2 className="text-base font-semibold leading-7 text-gray-900">
-              Create shared account
+              Create a shared group account
             </h2>
             <p className="mt-1 text-sm leading-6 text-gray-600">
-              Create a shared account, add deposit limit, invite members.
+              Create a shared account, add deposit limit and invite group
+              members.
             </p>
 
             <div className="grid grid-cols-1 mt-10 gap-x-6 gap-y-8 sm:grid-cols-6">

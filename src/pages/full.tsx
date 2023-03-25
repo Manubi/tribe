@@ -46,7 +46,7 @@ const transactions = [
     id: 1,
     name: "Payment to Molly Sanders",
     href: "#",
-    amount: "$20,000",
+    amount: "$20.000",
     currency: "USD",
     status: "success",
     date: "July 11, 2020",

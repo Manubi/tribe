@@ -1,4 +1,5 @@
 import { AccountCard } from "@/components/AccountCard";
+import { Profile } from "@/components/Profile";
 import Tabbar from "@/components/Tabbar";
 import { CreditCardIcon, PlusCircleIcon } from "@heroicons/react/24/outline";
 import { Inter } from "next/font/google";
@@ -13,7 +14,7 @@ const card_WG = {
   href: "/LivingCommunityAccount",
   icon: CreditCardIcon,
   amount: "€ 2,400.50",
-  description: "My Living Community in Vienna",
+  description: "Bennogasse 19/19",
 };
 
 const card_Family = {
@@ -34,32 +35,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <h2 className="mt-8 ml-6 text-lg font-medium leading-6 text-gray-900">
-          Shared Accounts Overview
-        </h2>
-        <div
-          className="flex justify-end"
-          onClick={() => router.push("/create")}
-        >
-          <PlusCircleIcon className="w-8 h-8 mr-6 text-gray-500" />
-        </div>
-        <AccountCard card={card_WG} />
-        <AccountCard card={card_Family} />
-        {/* <button
-          type="button"
-          className="inline-flex items-center px-3 py-2 text-sm font-semibold text-white rounded-md shadow-sm bg-cyan-600 hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
-        >
-          Send money
-        </button> */}
-        {/* <h2 className="mt-8 ml-6 text-lg font-medium leading-6 text-gray-900">
-          Wallet Overview
-        </h2> */}
-
+      <div className="mt-8">
+        <Profile />
         <MyAccount />
-        <h2 className="mt-8 ml-6 text-lg font-medium leading-6 text-gray-900">
-          Shared Wallets
-        </h2>
+        <div className="flex content-center justify-between">
+          <h2 className="mt-8 ml-6 leading-6 text-gray-900 font-md">
+            Shared Wallets
+          </h2>
+          <div
+            className="flex justify-end"
+            onClick={() => router.push("/create")}
+          >
+            <PlusCircleIcon className="w-8 h-8 mr-6 text-gray-500" />
+          </div>
+        </div>
         <div className="mb-52">
           <AccountCard card={card_WG} />
           <AccountCard card={card_Family} />
