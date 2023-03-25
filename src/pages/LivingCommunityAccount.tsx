@@ -4,7 +4,9 @@ import {
   ArrowDownIcon,
   ArrowUpIcon,
   BanknotesIcon,
+  CheckIcon,
   ChevronRightIcon,
+  ClockIcon,
   ShoppingBagIcon,
 } from "@heroicons/react/24/outline";
 import Head from "next/head";
@@ -15,7 +17,7 @@ const transactions = [
     id: 1,
     name: "Payment to Molly Sanders",
     href: "#",
-    amount: "€ 2,000.00",
+    amount: "€ 2.000,00",
     currency: "EUR",
     status: "success",
     date: "July 11, 2023",
@@ -25,7 +27,7 @@ const transactions = [
     id: 2,
     name: "Payment to Supermarket",
     href: "#",
-    amount: "€ 44.23",
+    amount: "€ 44,23",
     currency: "USD",
     status: "success",
     date: "July 12, 2023",
@@ -35,7 +37,7 @@ const transactions = [
     id: 3,
     name: "Payment to Phone carrier",
     href: "#",
-    amount: "€ 10.99",
+    amount: "€ 10,99",
     currency: "EUR",
     status: "success",
     date: "July 13, 2023",
@@ -62,7 +64,7 @@ export default function LivingCommunityAccount() {
             Bennogasse 19/19
           </p>
           <h2 className="mt-12 text-2xl font-semibold leading-6 text-center text-gray-900">
-            € 1200.50
+            € 2,400.50
           </h2>
         </div>
         <div className="flex justify-between m-10 align-middle">
@@ -92,37 +94,49 @@ export default function LivingCommunityAccount() {
         </h2>
 
         <div className="m-2">
-          <div className="flex items-center mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+          <div className="flex items-center justify-between mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             <img
               className="w-12 h-12 m-3 rounded-full sm:hidden"
               src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
               alt=""
             />
+            <div className="flex items-center justify-between pl-2 pr-3 leading-7 text-gray-900 bg-yellow-300 text-small sm:truncate sm:leading-9 rounded-xl">
+              <ClockIcon className="flex-shrink-0 w-5 h-5 mr-3 text-gray-900 ml-15 " />{" "}
+              Invited{" "}
+            </div>
             <h1 className="ml-10 mr-10 leading-7 text-gray-900 text-small sm:truncate sm:leading-9">
               John Doe
             </h1>
           </div>
-          <div className="flex items-center mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+          <div className="flex items-center justify-between mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             <img
               className="w-12 h-12 m-3 rounded-full sm:hidden"
               src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
               alt=""
             />
+            <div className="flex items-center justify-between pl-2 pr-3 leading-7 text-gray-900 bg-green-300 text-small sm:truncate sm:leading-9 rounded-xl">
+              <CheckIcon className="flex-shrink-0 w-5 h-5 mr-3 text-gray-900 ml-15 " />{" "}
+              Active{" "}
+            </div>
             <h1 className="ml-10 mr-10 leading-7 text-gray-900 text-small sm:truncate sm:leading-9">
               Tim Mayer
             </h1>
           </div>
-          <div className="flex items-center mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+          <div className="flex items-center justify-between mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             <img
               className="w-12 h-12 m-3 rounded-full sm:hidden"
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.6&w=256&h=256&q=80"
               alt=""
             />
+            <div className="flex items-center justify-between pl-2 pr-3 leading-7 text-gray-900 bg-green-300 text-small sm:truncate sm:leading-9 rounded-xl">
+              <CheckIcon className="flex-shrink-0 w-5 h-5 mr-3 text-gray-900 ml-15 " />{" "}
+              Active{" "}
+            </div>
             <h1 className="ml-10 mr-10 leading-7 text-gray-900 text-small sm:truncate sm:leading-9">
               Me
             </h1>
           </div>
-          <div className="flex items-center mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+          <div className="flex items-center justify-between mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
             <h1 className="m-auto leading-7 text-gray-900 ">
               <div className="flex content-center justify-center h-12 align-middle">
                 <p className="my-auto font-medium"> Add member </p>

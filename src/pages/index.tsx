@@ -13,7 +13,7 @@ const card_WG = {
   name: "Living Community",
   href: "/LivingCommunityAccount",
   icon: CreditCardIcon,
-  amount: "€ 2,400.50",
+  amount: "€ 2.400,50",
   description: "Bennogasse 19/19",
 };
 
@@ -21,7 +21,7 @@ const card_Family = {
   name: "Family",
   href: "/Family",
   icon: CreditCardIcon,
-  amount: "€ 5,600.50",
+  amount: "€ 5.600,50",
   description: "My shared family account",
 };
 
