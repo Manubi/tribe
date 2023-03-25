@@ -12,6 +12,7 @@ import {
   ArrowDownIcon,
   ArrowUpIcon,
   ShoppingBagIcon,
+  PlusCircleIcon,
 } from "@heroicons/react/24/outline";
 
 const transactions = [
@@ -82,10 +83,10 @@ export default function LivingCommunityAccount() {
           </button>
         </div>
 
-        <div className="flex items-center   bg-blue-600     px-3 py-2 text-sm  shadow-sm ring-1 ring-inset ring-blue-700 hover:bg-blue-700 mt-2 rounded text-center m-20">
+        {/* <div className="flex items-center   bg-blue-600     px-3 py-2 text-sm  shadow-sm ring-1 ring-inset ring-blue-700 hover:bg-blue-700 mt-2 rounded text-center m-20">
           Claim new offers
           <ShoppingBagIcon className="flex-shrink-0 w-5 h-5 text-gray-400 ml-5 " />
-        </div>
+        </div> */}
 
         <h2 className="max-w-6xl px-4 mx-auto mt-8 text-lg font-medium leading-6 text-gray-900 sm:px-6 lg:px-8">
           Members
@@ -112,6 +113,13 @@ export default function LivingCommunityAccount() {
               Lisa Stone
             </h1>
           </div>
+          <div className="flex items-center   bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 mt-2">
+            <h1 className=" m-auto leading-7 text-gray-900  ">
+              <div>
+                <PlusCircleIcon className="flex-shrink-0 w-10 h-10 text-gray-400 ml-5 " />
+              </div>
+            </h1>
+          </div>
         </div>
 
         <h2 className="max-w-6xl px-4 mx-auto mt-8 text-lg font-medium leading-6 text-gray-900 sm:px-6 lg:px-8">
@@ -119,10 +127,10 @@ export default function LivingCommunityAccount() {
         </h2>
 
         {/* Activity list (smallest breakpoint only) */}
-        <div className="shadow sm:hidden">
+        <div className="mt-2 shadow sm:hidden">
           <ul
             role="list"
-            className="mt-2 overflow-hidden divide-y divide-gray-200 shadow sm:hidden"
+            className=" overflow-hidden divide-y divide-gray-200 shadow sm:hidden"
           >
             {transactions.map((transaction) => (
               <li key={transaction.id}>
@@ -155,6 +163,17 @@ export default function LivingCommunityAccount() {
                     />
                   </span>
                 </a>
+                {transaction.id === 2 ? (
+                  <div className="flex justify-center items-center  bg-white hover:bg-gray-50">
+                    <button
+                      type="button"
+                      className="inline-flex items-center px-3 py-2  mb-2 text-sm font-semibold text-white bg-green-500 rounded-md shadow-sm ring-1 ring-inset ring-green-500 hover:bg-green-600"
+                    >
+                      Claim your award{" "}
+                      <ShoppingBagIcon className="flex-shrink-0 w-5 h-5 text-white-400 ml-5 " />
+                    </button>
+                  </div>
+                ) : null}
               </li>
             ))}
           </ul>
