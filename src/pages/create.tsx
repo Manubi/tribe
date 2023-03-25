@@ -20,8 +20,8 @@ export default function Create() {
               Create a shared group account
             </h2>
             <p className="mt-1 text-sm leading-6 text-gray-600">
-              Create a shared account, add a deposit limit and invite group
-              members.
+              Create a shared account, add a minimum deposit limit and invite
+              group members.
             </p>
 
             <div className="grid grid-cols-1 mt-10 gap-x-6 gap-y-8 sm:grid-cols-6">

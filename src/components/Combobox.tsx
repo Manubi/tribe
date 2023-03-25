@@ -36,7 +36,7 @@ export default function InviteMembers() {
 
       <Combobox value={selected} onChange={setSelected}>
         <div className="relative mt-1">
-          <div className="relative w-full overflow-hidden text-left bg-transparent rounded-lg shadow-none cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-300 sm:text-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-700 ">
+          <div className="relative w-full overflow-hidden text-left bg-transparent rounded-lg shadow-none cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-cyan-300 sm:text-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-cyan-700 ">
             <Combobox.Input
               className="w-full py-2 pl-3 pr-10 text-sm leading-5 text-gray-900 bg-transparent border-none focus:ring-0"
               displayValue={(person: { id: number; name: string }) =>
@@ -69,7 +69,7 @@ export default function InviteMembers() {
                     key={person.id}
                     className={({ active }) =>
                       `relative cursor-default select-none py-2 pl-10 pr-4 ${
-                        active ? "bg-teal-600 text-white" : "text-gray-900"
+                        active ? "bg-cyan-600 text-white" : "text-gray-900"
                       }`
                     }
                     placeholder="Search for a member"
@@ -87,7 +87,7 @@ export default function InviteMembers() {
                         {selected ? (
                           <span
                             className={`absolute inset-y-0 left-0 flex items-center pl-3 ${
-                              active ? "text-white" : "text-teal-600"
+                              active ? "text-white" : "text-cyan-600"
                             }`}
                           >
                             <CheckIcon className="w-5 h-5" aria-hidden="true" />
