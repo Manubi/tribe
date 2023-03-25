@@ -119,7 +119,7 @@ export default function LivingCommunityAccount() {
             </h1>
             <div className="flex items-center justify-between pl-2 pr-3 mr-3 leading-7 text-gray-900 bg-green-300 text-small sm:truncate sm:leading-9 rounded-xl">
               <CheckIcon className="flex-shrink-0 w-5 h-5 mr-3 text-gray-900 ml-15 " />{" "}
-              Active{" "}
+              Virtual Card{" "}
             </div>
           </div>
           <div className="flex items-center justify-between mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
@@ -133,7 +133,7 @@ export default function LivingCommunityAccount() {
             </h1>
             <div className="flex items-center justify-between pl-2 pr-3 mr-3 leading-7 text-gray-900 bg-green-300 text-small sm:truncate sm:leading-9 rounded-xl">
               <CheckIcon className="flex-shrink-0 w-5 h-5 mr-3 text-gray-900 ml-15 " />{" "}
-              Active{" "}
+              Virtual Card{" "}
             </div>
           </div>
           <div className="flex items-center justify-between mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
