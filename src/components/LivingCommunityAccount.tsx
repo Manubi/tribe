@@ -7,7 +7,7 @@ import {
   CheckIcon,
   ChevronRightIcon,
   ClockIcon,
-  ShoppingBagIcon
+  ShoppingBagIcon,
 } from "@heroicons/react/24/outline";
 import Head from "next/head";
 import Image from "next/image";
@@ -95,44 +95,50 @@ export default function LivingCommunityAccount() {
 
         <div className="m-2">
           <div className="flex items-center justify-between mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-            <img
-              className="w-12 h-12 m-3 rounded-full sm:hidden"
-              src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-              alt=""
-            />
-            <h1 className="ml-10 mr-10 leading-7 text-gray-900 text-small sm:truncate sm:leading-9">
-              John Doe
-            </h1>
-            <div className="flex items-center justify-between pl-2 pr-3 mr-3 leading-7 text-gray-900 bg-yellow-300 text-small sm:truncate sm:leading-9 rounded-xl">
-              <ClockIcon className="flex-shrink-0 w-5 h-5 mr-3 text-gray-900 ml-15 " />{" "}
+            <div className="flex items-center justify-center align-middle">
+              <img
+                className="w-12 h-12 m-3 rounded-full sm:hidden"
+                src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+              />
+              <h1 className="text-base leading-7 text-gray-900 sm:truncate sm:leading-9">
+                John Doe
+              </h1>
+            </div>
+            <div className="flex items-center justify-between pl-2 pr-3 mr-3 text-xs leading-6 text-gray-900 bg-yellow-300 sm:truncate sm:leading-9 rounded-xl">
+              <ClockIcon className="flex-shrink-0 w-3 h-3.5 mr-3.5 text-gray-900 ml-15 " />{" "}
               Invited{" "}
             </div>
           </div>
           <div className="flex items-center justify-between mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-            <img
-              className="w-12 h-12 m-3 rounded-full sm:hidden"
-              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
-              alt=""
-            />
-            <h1 className="ml-10 mr-10 leading-7 text-gray-900 text-small sm:truncate sm:leading-9">
-              Tim Mayer
-            </h1>
-            <div className="flex items-center justify-between pl-2 pr-3 mr-3 leading-7 text-gray-900 bg-green-300 text-small sm:truncate sm:leading-9 rounded-xl">
-              <CheckIcon className="flex-shrink-0 w-5 h-5 mr-3 text-gray-900 ml-15 " />{" "}
+            <div className="flex items-center justify-center align-middle">
+              <img
+                className="w-12 h-12 m-3 rounded-full sm:hidden"
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                alt=""
+              />
+              <h1 className="leading-7 text-gray-900 text-small sm:truncate sm:leading-9">
+                Tim Mayer
+              </h1>
+            </div>
+            <div className="flex items-center justify-between pl-2 pr-3 mr-3 text-xs leading-6 text-gray-900 bg-green-200 sm:truncate sm:leading-9 rounded-xl">
+              <CheckIcon className="flex-shrink-0 w-3.5 h-3.5 mr-3 text-gray-900 ml-15 " />{" "}
               Virtual Card{" "}
             </div>
           </div>
           <div className="flex items-center justify-between mt-2 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
-            <img
-              className="w-12 h-12 m-3 rounded-full sm:hidden"
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.6&w=256&h=256&q=80"
-              alt=""
-            />
-            <h1 className="ml-10 mr-10 leading-7 text-gray-900 text-small sm:truncate sm:leading-9">
-              Me
-            </h1>
-            <div className="flex items-center justify-between pl-2 pr-3 mr-3 leading-7 text-gray-900 bg-green-300 text-small sm:truncate sm:leading-9 rounded-xl">
-              <CheckIcon className="flex-shrink-0 w-5 h-5 mr-3 text-gray-900 ml-15 " />{" "}
+            <div className="flex items-center justify-center align-middle">
+              <img
+                className="w-12 h-12 m-3 rounded-full sm:hidden"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.6&w=256&h=256&q=80"
+                alt=""
+              />
+              <h1 className="leading-7 text-gray-900 text-small sm:truncate sm:leading-9">
+                Me
+              </h1>
+            </div>
+            <div className="flex items-center justify-between pl-2 pr-3 mr-3 text-xs leading-6 text-gray-900 bg-green-200 sm:truncate sm:leading-9 rounded-xl">
+              <CheckIcon className="flex-shrink-0 w-3.5 h-3.5 mr-3 text-gray-900 ml-15 " />{" "}
               Virtual Card{" "}
             </div>
           </div>
