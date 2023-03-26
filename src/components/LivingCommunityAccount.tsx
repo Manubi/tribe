@@ -45,7 +45,7 @@ const transactions = [
   },
   {
     id: 4,
-    name: "Deposit Tim Mayer",
+    name: "Deposit by Tim Mayer",
     href: "#",
     amount: "€ +200,00",
     currency: "EUR",
