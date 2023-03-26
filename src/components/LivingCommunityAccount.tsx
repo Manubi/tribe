@@ -25,7 +25,7 @@ const transactions = [
   },
   {
     id: 2,
-    name: "Billa Groceries",
+    name: "Billa Groceries by John Doe",
     href: "#",
     amount: "€ -54,23",
     currency: "USD",
